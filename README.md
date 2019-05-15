@@ -56,7 +56,7 @@ Evenementen/users database
  Evenement  
   evenement_id integer primary key 
   datum date  
-  omschrijving text  
+  omschrijving text    
   geannuleerd tinyInt  
   
  Evenement/user  
