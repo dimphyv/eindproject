@@ -17,19 +17,7 @@ Een website voor een club, met een inlogsysteem voor leden.
 Daarnaast een evenementen pagina waar leden op in kunnen schrijven.   
 De leden kunnen zelf een evenement toevoegen.   
 Inschrijven op een evenement kan alleen als je als lid ingelogd bent op de website.   
-De databases:  
-Users  
-  user_id  
-  naam  
-  email  
-  wachtwoord  
-  geaccepteerd ja/nee  
-  
-Evenementen  
-  evenement_id  
-  datum  
-  omschrijving  
-  geannuleerd?  
+
   
 Evenementen/users database  
   evenement_id  
