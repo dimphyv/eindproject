@@ -1,6 +1,6 @@
 # eindproject
 
-Inhoudsopgave  
+<b>Inhoudsopgave </b> <br>
 Planning  
 Rollen verdeling  
 Beschrijving van het project
@@ -8,34 +8,20 @@ Databases
 Planning  
 
 
-Interne rollen verdeling  
+<b>Interne rollen verdeling  </b><br>
 
 
-Beschrijving van het project  
+<b>Beschrijving van het project  </b><br>
 
 Een website voor een club, met een inlogsysteem voor leden.  
 Daarnaast een evenementen pagina waar leden op in kunnen schrijven.   
 De leden kunnen zelf een evenement toevoegen.   
 Inschrijven op een evenement kan alleen als je als lid ingelogd bent op de website.   
-De databases:  
-Users  
-  user_id  
-  naam  
-  email  
-  wachtwoord  
-  geaccepteerd ja/nee  
+
   
-Evenementen  
-  evenement_id  
-  datum  
-  omschrijving  
-  geannuleerd?  
+
   
-Evenementen/users database  
-  evenement_id  
-  user_id  
-  
-  pages:  
+ <b> pages:  </b><br>
   landingspage  
     log in velden user/password -> evenementen pagina die uit de database gehaald worden  
           button nieuwe aanmelding -> nieuwe pagina met formulier naam/email/password   
@@ -45,7 +31,7 @@ Evenementen/users database
     nieuwe evenement toevoegen button -> formulier new event  
     button lid -> lijst alle leden  
     
- Databases:  
+<b> Databases: </b><br> 
  Users  
   user_id integer primary key  
   naam varchar  
