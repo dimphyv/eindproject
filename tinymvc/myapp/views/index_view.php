@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Welcome to TinyMVC!</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style type="text/css">
 			body {
 			  background:#9dbde1 url(http://www.tinymvc.com/images/bg-gradient.gif) top repeat-x;
@@ -18,8 +18,8 @@
 			h1 {
 				font-size: 					2.18em;
 				letter-spacing:			-0.01em;
-			}			
-			
+			}
+
 			a:link {
 				color:							#134c8c;
 			}
@@ -37,7 +37,7 @@
       	color:              #c44242;
       	padding:            .2em 1em .4em;
       }
-			
+
 			#bottom {
 				border-top:					1px solid #134c8c;
 				margin-top:					1em;
@@ -47,9 +47,9 @@
 		</style>
 	</head>
 	<body>
-		
+		<?php var_dump($users); ?>
 	  <h1>Welcome to TinyMVC!</h1>
-		
+
 		<p>This is TinyMVC version <?=TMVC_VERSION?>.</p>
 		<p>The view file for this page is here:</p>
 
@@ -58,9 +58,9 @@
 		<p>The controller for this page is here:</p>
 
 		<div class="code">tinymvc/myapp/controller/index.php</div>
-		
+
 		Let's get started, head to the <a href="http://www.tinymvc.com/wiki/index.php/Documentation">documentation</a>!
-		
+
 		<div id="bottom	">
 			<a href="http://www.tinymvc.com/">TinyMVC</a> is licensed under the GNU <a rel="license" href="http://www.gnu.org/licenses/lgpl.html">LGPL</a> license.
 		<br />
@@ -68,5 +68,3 @@
 		</div>
 	</body>
 </html>
-
-
