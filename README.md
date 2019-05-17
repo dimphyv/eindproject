@@ -7,7 +7,7 @@
 <li>Databases</li>  
  
 </ul>
-<b>Planning</b>  
+<b>Planning</b><br>
 <b>Interne rollen verdeling  </b><br>
 
 
