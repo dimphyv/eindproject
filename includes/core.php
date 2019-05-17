@@ -4,14 +4,14 @@ function init() {
 
 	$root = str_replace("/index.php", "", $_SERVER["SCRIPT_FILENAME"]);
 
-	$protocol = (!empty($_SERVER['HTTPS']) 
-					&& $_SERVER['HTTPS'] !== 'off' 
+	$protocol = (!empty($_SERVER['HTTPS'])
+					&& $_SERVER['HTTPS'] !== 'off'
 					|| $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 
 	$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
 	$subdir = str_replace("/index.php", "", $_SERVER['SCRIPT_NAME']);
 	$path = $protocol . $host . $subdir;
-	
+
 	$config["root"] = $root;
 	$config["path"] = $path;
 
@@ -42,7 +42,7 @@ function routing() {
 function requests() {
 	$full_uri = explode("?", $_SERVER['REQUEST_URI']);
 	$path_uri = $full_uri[0];			// Ignoring querystring from URI
-	
+
 	$uri = explode('/', $path_uri);
 
 	# Trimming sub folders name in case project is in sub folders
@@ -65,7 +65,7 @@ function get_controller() {
 	global $config;
 
 	$requests = requests();
-	
+
 	if($requests[0])
 		return $requests[0];
 	else
@@ -103,7 +103,7 @@ function load_controller($controller) {
 		$map = "controllers/{$controller}.map.php";
 		if(file_exists($map)) {
 			include($map);
-			
+
 			if(isset($$method)) {
 				if(isset($requests[1])) {
 					$map = $$method;
@@ -165,10 +165,10 @@ function redirect($url, $status = 301) {
 		echo "<script>document.location.href='$url';</script>\n";
 	} else {
 		@ob_end_clean();				# clear output buffer
-		
+
 		if($status == 301) header("HTTP/1.1 301 Moved Permanently");
 		if($status == 307) header("HTTP/1.1 307 Temporary Redirect");
-		
+
 		header( "Location: ". $url );
 	}
 
@@ -290,7 +290,7 @@ function generate_api_key($var, $random = false) {
 	} else {
 		$key = md5($salt . $secret . $var);
 	}
-	
+
 	return $key;
 }
 
