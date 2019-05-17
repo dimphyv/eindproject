@@ -1,12 +1,12 @@
 # eindproject
 
 <b>Inhoudsopgave </b> <br>
-Planning  
-Rollen verdeling  
-Beschrijving van het project
-Databases  
-Planning  
-
+<ul><li>Planning</li>  
+<li>Rollen verdeling </li> 
+<li>Beschrijving van het project </li> 
+<li>Databases</li>  
+<li>Planning</li>  
+</ul>
 
 <b>Interne rollen verdeling  </b><br>
 
