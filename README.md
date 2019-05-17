@@ -5,9 +5,9 @@
 <li>Rollen verdeling </li> 
 <li>Beschrijving van het project </li> 
 <li>Databases</li>  
-<li>Planning</li>  
+ 
 </ul>
-
+<b>Planning</b><br>
 <b>Interne rollen verdeling  </b><br>
 
 
