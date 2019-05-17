@@ -21,33 +21,33 @@ Inschrijven op een evenement kan alleen als je als lid ingelogd bent op de websi
   
 
   
- <b> pages:  </b><br>
-  landingspage  
+ <b> Pages:  </b><br>
+  <ul><li>landingspage  
     log in velden user/password -> evenementen pagina die uit de database gehaald worden  
-          button nieuwe aanmelding -> nieuwe pagina met formulier naam/email/password   
-  evenementen pagina:  
+          button nieuwe aanmelding -> nieuwe pagina met formulier naam/email/password   </li>
+  <li>evenementen pagina:  
     lijst evenementen   
     knoppen inschrijven/uitschrijven/ lijst meegaande leden/wijzigen->zelfde form voor nieuw event met opgehaalde data uit de database 
     nieuwe evenement toevoegen button -> formulier new event  
-    button lid -> lijst alle leden  
+    button lid -> lijst alle leden  </li></ul>
     
 <b> Databases: </b><br> 
- Users  
-  user_id integer primary key  
-  naam varchar  
-  email varchar  
-  toegelaten boolean default is false    
-  wachtwoord varchar  
-  
+ <ul><li>Users </li>
+ <li> user_id integer primary key  </li>
+  <li>naam varchar  </li>
+ <li> email varchar  </li>
+  <li>toegelaten boolean default is false  </li>  
+ <li> wachtwoord varchar  </li>
+  </ul>
  Evenement  
-  evenement_id integer primary key 
-  datum date  
-  omschrijving text  
-  geannuleerd tinyInt  
-  
+ <ul> <li>evenement_id integer primary key </li>
+<li>datum date </li> 
+ <li> omschrijving text </li> 
+ <li> geannuleerd tinyInt </li> 
+  </ul>
  Evenement/user  
-  evenement_id  
-  user_id  
+  <ul><li>evenement_id  </li>
+  <li>user_id</li></ul>  
   
   
   
