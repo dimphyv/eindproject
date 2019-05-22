@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body>
+
    <?=$body_text?>
     evenementen pagina
   </body>
