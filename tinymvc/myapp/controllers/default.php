@@ -21,5 +21,3 @@ class Default_Controller extends TinyMVC_Controller
     $this->view->display('index_view');
   }
 }
-
-?>
