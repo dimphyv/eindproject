@@ -16,9 +16,7 @@ class Events_Controller extends TinyMVC_Controller
   {
     $this->load->model('event_model', 'events');
     $events = $this->events->get_events();
-
     $this->view->assign('events', $events);
-    $this->view->display('events_view');
     $this->view->display('evenementen_view');
   }
 

@@ -5,11 +5,8 @@
     <title></title>
   </head>
   <body>
-    <?php
-      foreach ($events as $key => $value) {
-        echo $value;
-      }
-    ?>
+
+   <?=$body_text?>
     evenementen pagina
   </body>
 </html>
