@@ -22,7 +22,7 @@
           <div class="col-8 offset-2">
              <h1 class="text-center mt-2 pt-5 pb-2">Login leden</h1>
              <div class="row">
-               <form action="Login_Controller/checkuser" method="POST" class="mb-3 pl-2 pr-2">
+               <form action="Login/checkUser" method="POST" class="mb-3 pl-2 pr-2">
                  <div class="form-group">
                   <label for="email">Email adres</label>
                   <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Enter email">
