@@ -89,7 +89,7 @@ class tmvc
   {
     /* set initial timer */
     self::timer('tmvc_app_start');
-    
+
     /* set path_info */
     $this->path_info = !empty($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] :
 	    (!empty($_SERVER['ORIG_PATH_INFO']) ? $_SERVER['ORIG_PATH_INFO'] : '');
