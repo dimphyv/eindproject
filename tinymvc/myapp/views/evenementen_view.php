@@ -5,7 +5,22 @@
     <title></title>
   </head>
   <body>
-   <?=$body_text?>
-    evenementen pagina
+    <h3>evenementen pagina</h3>
+    <table>
+      <thead>
+
+          <?php foreach ($events as $event): ?>
+          <tr>
+          <td><?php echo $event['evenement_id']?></td>
+
+
+
+
+          </tr>
+        <?php endforeach; ?>
+
+      </thead>
+    </table>
+
   </body>
 </html>
